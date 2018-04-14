@@ -26,12 +26,14 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<meta name="Keywords" "Marjory Marquez Portfolio" content="">
 		<meta name="Marjory Marquez" content="Marjory Marquez">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
-<script src="main.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="css/introLoader.min.css">
+    <link rel="stylesheet" href="css/style.css">
+ 
 </head>
 <body>
 <title>My Portfolio</title>
@@ -128,11 +130,8 @@ class="icon" onclick="myFunction()">&#9776;</a>
    
    <h1 style="text-align:center"> <p><span>Front End Developer</p></span> <span class="w3-hide-small w3-text-light-grey"></span>                                                                                                                                                                                       <p><span>Portfolio</p></h1>
   </div>
-  
   </div>
-</header>
-            
-                                                                                                                                      
+</header>                                                                                                                               
   <!--End Section Wide PC Image--> 
                                                                                                                                                    
   <!--Section Skills 1 -->                                                                                                                                      
@@ -153,19 +152,19 @@ class="icon" onclick="myFunction()">&#9776;</a>
      <br>
    </section>
  <!--Images used to open the Lightbox-->
-      <div class="container">       
-    <img src="https://s31.postimg.org/3riee15tz/HTML5_Logo_128.png"  alt="html5" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
-    <img src="https://s31.postimg.org/58k58amif/CSS3_icon.png" alt="css3" onclick="openModal();currentSlide(1)" class="hover-shadow cursor" border='0'</a>
-    <img src="https://s31.postimg.org/w4dw4qrmv/Javascript_logo.png"  alt="JavaScript" onclick="openModal();currentSlide(1)" class="hover-shadow cursor" border="0"</a>
-    <img src="https://s31.postimg.org/8eogfuix3/bootstrap1.jpg" alt="bootstrap" onclick="openModal();currentSlide(1)" class="hover-shadow cursor" border="0"</a>
-    <img src="https://s31.postimg.org/cnt6i2jmf/C_logo.png" alt="C++" onclick="openModal();currentSlide(1)" class="hover-shadow cursor" border="0"</a>
-    <img src="https://s31.postimg.org/r6gm1pjev/saas-app-icon.png" alt="saas" onclick="openModal();currentSlide(1)" class="hover-shadow cursor" border="0"</a>
+      <div class="container"> 
+    <img src="https://s31.postimg.org/3riee15tz/HTML5_Logo_128.png"  style="width:14%" alt="html5" onclick="openModal();currentSlide(1)" class="hover-shadow">
+    <img src="https://s31.postimg.org/58k58amif/CSS3_icon.png" style="width:15%" alt="css3" onclick="openModal();currentSlide(2)" class="hover-shadow">
+    <img src="https://s31.postimg.org/w4dw4qrmv/Javascript_logo.png"  style="width:14%" alt="JavaScript"  onclick="openModal();currentSlide(3)" class="hover-shadow">
+    <img src="https://s31.postimg.org/8eogfuix3/bootstrap1.jpg" style="width:14%" alt="bootstrap" onclick="openModal();currentSlide(4)" class="hover-shadow">
+    <img src="https://s31.postimg.org/cnt6i2jmf/C_logo.png" style="width:14%" alt="C++" onclick="openModal();currentSlide(5)" class="hover-shadow">
+    <img src="https://s31.postimg.org/r6gm1pjev/saas-app-icon.png" style="width:14%" alt="saas" onclick="openModal();currentSlide(6)" class="hover-shadow">
         <br>
         </br>
-    <img src="https://s31.postimg.org/9dj3u5yxz/th_002.jpg" alt="wordpress" onclick="openModal();currentSlide(1)" class="hover-shadow cursor" border="0"</a>
-    <img src="https://s31.postimg.org/qrsb5rbd3/github-1024-black.png" alt="github" onclick="openModal();currentSlide(1)" class="hover-shadow cursor" border="0"</a> 
-    <img src="https://s31.postimg.org/ags793bmf/My_SQL.png" alt="MySQL" onclick="openModal();currentSlide(1)" class="hover-shadow cursor" border="0"</a>
-  <img src="https://s31.postimg.org/xt7v8vqjr/php-512_icon.png" alt="PHP" onclick="openModal();currentSlide(1)" class="hover-shadow cursor" border="0"</a>
+    <img src="https://s31.postimg.org/9dj3u5yxz/th_002.jpg" style="width:14%" alt="wordpress" onclick="openModal();currentSlide(7)" class="hover-shadow">
+    <img src="https://s31.postimg.org/qrsb5rbd3/github-1024-black.png" style="width:14%" alt="github" onclick="openModal();currentSlide(8)" class="hover-shadow"> 
+    <img src="https://s31.postimg.org/ags793bmf/My_SQL.png" style="width:14%" alt="MySQL" onclick="openModal();currentSlide(9)" class="hover-shadow">
+  <img src="https://s31.postimg.org/xt7v8vqjr/php-512_icon.png" style="width:14%" alt="PHP" onclick="openModal();currentSlide(10)" class="hover-shadow">
   </div>
 </div>
 </div>                                                                                                                                         </div>
@@ -273,6 +272,7 @@ class="icon" onclick="myFunction()">&#9776;</a>
     color: Black;
   }
   </style>
+  <section id= "Projects">
  <div class="container">
     <h2 class="w3-border-bottom w3-border-light-grey w3-padding-16">Projects</h2>
 <br>
@@ -281,7 +281,10 @@ class="icon" onclick="myFunction()">&#9776;</a>
   <div class="column">
      <div class="col-sm-3">
      <div class="thumbnail">
-     <img src="Tribute.jpg" alt="Tribute" style="width:100%">
+     
+ <a href="https://marjory00.github.io/FCC-Tribute/"> <img src='https://s31.postimg.cc/5ugidicyf/Tribute_Project_f_CC-2018-4-14_Tribute.jpg' border='0' alt='Tribute_Project_f_CC-2018-4-14_Tribute'/></a> 
+       <br>
+       <br>
    <button class="w3-btn w3-xlarge w3-dark-grey w3-hover-light-grey" onclick="document.getElementById('id01').style.display='block'" style="font-weight:900;">Lorem Ipsum</button>  
   <br>
   </br>     
@@ -317,7 +320,18 @@ class="icon" onclick="myFunction()">&#9776;</a>
   <p>Nam sit amet pulvinar sapien, nec dignissim libero.</p>
   </div>
   </div>
-
+  </section>
+  <section id= "About">
+ <div class="container">
+    <h2 class="w3-border-bottom w3-border-light-grey w3-padding-16">About</h2>
+    </div>
+<br>
+</br>
+</section>
+<section id= "Contact">
+ <div class="container">
+    <h2 class="w3-border-bottom w3-border-light-grey w3-padding-16">Contact</h2>
+    </div>
   </head>
   </style>
 </section>
