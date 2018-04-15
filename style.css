@@ -1,5 +1,12 @@
+/*DISABLE the Horizontal Scroll*/
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 /*Section TopNav*/
 /* Add a black background color to the top navigation */
+
 .topnav {
     background-color: #333;
     overflow: hidden;
@@ -228,6 +235,8 @@ img.hover-shadow {
 	}
 
 #container img {display: inline-block; margin: 0 25px;}
+
+
 /*Continue working Section Projects*/
 
 
