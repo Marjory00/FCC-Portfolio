@@ -30,8 +30,8 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-    <link rel="stylesheet" href="css/introLoader.min.css">
     <link rel="stylesheet" href="css/style.css">
+<link rel="index" href="js/index.js">
  
 </head>
 <body>
@@ -150,113 +150,30 @@ class="icon" onclick="myFunction()">&#9776;</a>
     </head>
      <br>
    </section>
- <!--Images used to open the Lightbox-->
+ <!--Images hover-shadow-->
       <div class="container"> 
-    <img src="https://s31.postimg.org/3riee15tz/HTML5_Logo_128.png"  style="width:14%" alt="html5" onclick="openModal();currentSlide(1)" class="hover-shadow">
-    <img src="https://s31.postimg.org/58k58amif/CSS3_icon.png" style="width:15%" alt="css3" onclick="openModal();currentSlide(2)" class="hover-shadow">
-    <img src="https://s31.postimg.org/w4dw4qrmv/Javascript_logo.png"  style="width:14%" alt="JavaScript"  onclick="openModal();currentSlide(3)" class="hover-shadow">
-    <img src="https://s31.postimg.org/8eogfuix3/bootstrap1.jpg" style="width:14%" alt="bootstrap" onclick="openModal();currentSlide(4)" class="hover-shadow">
-    <img src="https://s31.postimg.org/cnt6i2jmf/C_logo.png" style="width:14%" alt="C++" onclick="openModal();currentSlide(5)" class="hover-shadow">
-    <img src="https://s31.postimg.org/r6gm1pjev/saas-app-icon.png" style="width:14%" alt="saas" onclick="openModal();currentSlide(6)" class="hover-shadow">
+    <img src="https://s31.postimg.org/3riee15tz/HTML5_Logo_128.png"  style="width:14%" alt="html5"  class="hover-shadow">
+    <img src="https://s31.postimg.org/58k58amif/CSS3_icon.png" style="width:15%" alt="css3" class="hover-shadow">
+    <img src="https://s31.postimg.org/w4dw4qrmv/Javascript_logo.png"  style="width:14%" alt="JavaScript"   class="hover-shadow">
+    <img src="https://s31.postimg.org/8eogfuix3/bootstrap1.jpg" style="width:14%" alt="bootstrap"  class="hover-shadow">
+    <img src="https://s31.postimg.org/cnt6i2jmf/C_logo.png" style="width:14%" alt="C++"  class="hover-shadow">
+    <img src="https://s31.postimg.org/r6gm1pjev/saas-app-icon.png" style="width:14%" alt="saas" class="hover-shadow">
         <br>
         </br>
-    <img src="https://s31.postimg.org/9dj3u5yxz/th_002.jpg" style="width:14%" alt="wordpress" onclick="openModal();currentSlide(7)" class="hover-shadow">
-    <img src="https://s31.postimg.org/qrsb5rbd3/github-1024-black.png" style="width:14%" alt="github" onclick="openModal();currentSlide(8)" class="hover-shadow"> 
-    <img src="https://s31.postimg.org/ags793bmf/My_SQL.png" style="width:14%" alt="MySQL" onclick="openModal();currentSlide(9)" class="hover-shadow">
-  <img src="https://s31.postimg.org/xt7v8vqjr/php-512_icon.png" style="width:14%" alt="PHP" onclick="openModal();currentSlide(10)" class="hover-shadow">
+    <img src="https://s31.postimg.org/9dj3u5yxz/th_002.jpg" style="width:14%" alt="wordpress"  class="hover-shadow">
+    <img src="https://s31.postimg.org/qrsb5rbd3/github-1024-black.png" style="width:14%" alt="github" class="hover-shadow"> 
+    <img src="https://s31.postimg.org/ags793bmf/My_SQL.png" style="width:14%" alt="MySQL"  class="hover-shadow">
+  <img src="https://s31.postimg.org/xt7v8vqjr/php-512_icon.png" style="width:14%" alt="PHP" class="hover-shadow">
   </div>
 </div>
-</div>                                                                                                                                         </div>
-                                                                                                         
-<!--The Modal /Lightbox-->                                                                                                                                            
- 
-<div id="myModal" class="modal">
-  <span class="close cursor" onclick="closeModal()">&times;</span>
-  <div class="modal-content">
-
-    <div class="mySlides">
-      <div class="Numbertext" >1 / 10</div>
-      <img src="https://s31.postimg.org/3riee15tz/HTML5_Logo_128.png" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-      <div class="numbertext">2 / 10</div>
-      <img src='https://s31.postimg.org/58k58amif/CSS3_icon.png' style="width:100%">
-    </div>
-
-    <div class="mySlides">
-      <div class="numbertext">3 / 10</div>
-      <img src="https://s31.postimg.org/w4dw4qrmv/Javascript_logo.png" style="width:100%">
-    </div>
-    
-    <div class="mySlides">
-      <div class="numbertext">4 / 10</div>
-      <img src="https://s31.postimg.org/8eogfuix3/bootstrap1.jpg" style="width:100%">
-    </div>
-    
-    <div class="mySlides">
-      <div class="numbertext">5 / 10</div>
-      <img src="https://s31.postimg.org/cnt6i2jmf/C_logo.png" style="width:100%">
-    </div>
-    
-    <div class="mySlides">
-      <div class="numbertext">6 / 10</div>
-      <img src="https://s31.postimg.org/r6gm1pjev/saas-app-icon.png" style="width:100%">
-    </div>
-    <div class="mySlides">
-      <div class="numbertext">7 / 10</div>
-      <img src="https://s31.postimg.org/9dj3u5yxz/th_002.jpg" style="width:100%">
-    </div>
-    <div class="mySlides">
-      <div class="numbertext">8 / 10</div>
-      <img src='https://s31.postimg.org/qrsb5rbd3/github-1024-black.png' style="width:100%">
-    </div>
-    <div class="mySlides">
-      <div class="7">9 / 10</div>
-      <img src='https://s31.postimg.org/ags793bmf/My_SQL.png' style="width:100%">
-    </div>
-    <div class="mySlides">
-      <div class="7">10 / 10</div>
-      <img src='https://s31.postimg.org/ags793bmf/My_SQL.png' style="width:100%">
-    </div>
- <!-- Thumbnail image controls -->
-    <div class="column">
-      <img class="demo" src="https://s31.postimg.org/3riee15tz/HTML5_Logo_128.png" onclick="currentSlide(1)" alt="HTML5">
-    </div>
-    <div class="column">
-      <img class="demo" src='https://s31.postimg.org/58k58amif/CSS3_icon.png' onclick="currentSlide(2)" alt="CSS3">
-    </div>
-    <div class="column">
-      <img class="demo" src="https://s31.postimg.org/w4dw4qrmv/Javascript_logo.png" onclick="currentSlide(3)" alt="Javascript">
-    </div>
-    <div class="column">
-      <img class="demo" src="https://s31.postimg.org/8eogfuix3/bootstrap1.jpg" onclick="currentSlide(4)" alt="bootstrap">
-    </div>
-      <div class="column">
-      <img class="demo" src="https://s31.postimg.org/cnt6i2jmf/C_logo.png" onclick="currentSlide(5)" alt="C++">
-    </div>  
-    <div class="column">
-      <img class="demo" src="https://s31.postimg.org/r6gm1pjev/saas-app-icon.png" onclick="currentSlide(6)" alt="Sass">
-    </div>  
-    <div class="column">
-      <img class="demo" src=https://s31.postimg.org/9dj3u5yxz/th_002.jpg onclick="currentSlide(7)" alt="wordpress">
-    </div>
-    <div class="column">
-      <img class="demo" src='https://s31.postimg.org/qrsb5rbd3/github-1024-black.png' onclick="currentSlide(8)" alt="github">
-    </div>
-    <div class="column">
-      <img class="demo" src='https://s31.postimg.org/ags793bmf/My_SQL.png' onclick="currentSlide(9)" alt="mysql">
-      <div class="column">
-      <img class="demo" src='https://s31.postimg.org/xt7v8vqjr/php-512_icon.png' onclick="currentSlide(10)" alt="php">
-    </div>                                                                                                                              </div>
+</div>                                                                                                                                         </div>                                                                                                                              </div>
 </div>
                                                                                                                                                                                             
 <!--End Section Skills 1-->
 
 <!--Section Projects -->
 <section>
-<!-- Page content -->
-<div class="w3-content w3-padding" style="max-width:1400px">                                                    </div>
+  </div>
   </div>
 <br>
   </br>
@@ -275,8 +192,7 @@ class="icon" onclick="myFunction()">&#9776;</a>
  <div class="container">
     <h2 class="w3-border-bottom w3-border-light-grey w3-padding-16">Projects</h2>
 <br>
-</br>
-    <!--image gallery-->
+
     <!--For size of img projects section -section div.gallery.img-->
  <style>
 div.gallery {
@@ -324,35 +240,67 @@ div.desc {
 <div class="gallery">
   <a href='https://postimg.cc/image/eq13tn53r/' target='_blank'><img src='https://s31.postimg.cc/n8ajxzbmj/Coming_Soon_Project.jpg' border='0' alt='Coming'/></a>
   </a>
-  <div class="desc"><b>Project  </b></div>
+  <div class="desc"><b>Project 
+ </b></div>
 </div>
-</div>
+<br>
 </body>
   </html>
   </div>
-<br>
   </section>
   <section id= "About">
- <div class="container">
-    <h2 class="w3-border-bottom w3-border-light-grey w3-padding-16">About</h2>
+    <div class="container">
+ <h2 class="w3-border-bottom w3-border-light-grey w3-padding-16">About</h2>
     </div>
-<br>
-</br>
+    </div>
+<div class="container">
+<h4 style="background-color:rgb(242, 242, 242);">I am an IT Consultant and Front End Developer from Clarksburg, MD. I enjoy implementing business strategies, management and IT security to small businesses and end users. As well, skills in computer management,
+network security and administration, including Front End Development, and programming. If you are a business seeking a web presence, or an employer looking to hire me, you can get in touch with me here. <br>
+  <br>
+Thank you for your time and consideration.<br>
+  <br>
+  <b>Marjory Marquez</b>
+  <br>
+  </h4>
+    </br>
 </section>
+
+<!--Contact Form-->
 <section id= "Contact">
- <div class="container">
-    <h2 class="w3-border-bottom w3-border-light-grey w3-padding-16">Contact</h2>
-    </div>
-  </head>
+  <div class="container">
+  <form action="action_page.php">
+    <h2> Contact</h2>
+
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+<label for="Address">Address</label>
+    <textarea id="Address" input type="text" id="Address" name="Address" placeholder="Please provide address.." style="height:90px"></textarea>
+    <label for="Telephone">Telephone</label>
+    <input type="text" id="Telephone" name="Your telephone number" placeholder="Your telephone number..">
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="usa">USA</option>
+      <option value="canada">Canada</option>
+     <option value="australia">Australia</option>
+    </select>
+    
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+
+  </form>
+</div> 
+  </div>
   </style>
 </section>
 
  
   <!--End Section Project -->
-  
-  
 </body>
- 
 </html>
   
   
