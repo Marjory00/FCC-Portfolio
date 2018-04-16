@@ -9,49 +9,21 @@ function myFunction() {
         x.className = "topnav";
     }
 } 
-/*End Section TopNav
-/*Section Skills 1
-/*Thumbnail image controls*/
-/*Images used to open the Lightbox*/
+//End Section TopNav
 
-// Open the Modal
-function openModal() {
-  document.getElementById('myModal').style.display = "block";
-}
+//Section Skills 1//
+//Thumbnail image controls//
 
-// Close the Modal
-function closeModal() {
-  document.getElementById('myModal').style.display = "none";
-}
 
-var slideIndex = 1;
-showSlides(slideIndex);
+//End Section Skills 1-images//
 
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
+//Continue working Section Projects//
+//End Section Projects//
 
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
+//About Section//
 
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
-  var captionText = document.getElementById("caption");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-  captionText.innerHTML = dots[slideIndex-1].alt;
-}
-/*End Section Skills 1-images*/
+//End About Section//
+
+//Contact Form
+
+//End Contact Form
