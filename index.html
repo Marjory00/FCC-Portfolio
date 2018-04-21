@@ -16,12 +16,15 @@
 
 <body>
 
-  <html lang="en"
+  <!--DOCTYPE html-->
+<html lang="en"
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
 		Remove this if you use the .htaccess -->
+<!--<footer><h3>&copy;Copyright 2018 Marjory Marquez</h3></footer>-->
+
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<meta name="Keywords" "Marjory Marquez Portfolio" content="">
 		<meta name="Marjory Marquez" content="Marjory Marquez">
@@ -30,137 +33,57 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-    <link rel="stylesheet" href="css/style.css">
-<link rel="index" href="js/index.js">
- 
+
+<!--Link to external files-->
+ <link rel="index" href="js/index.js">
+<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-<title>My Portfolio</title>
+  
+<script src="demo_script_src.js">
+</script><!--To link js-->
 
-<!--Create a Responsive Topnav-->
-<!--navbar sit on top-->
-  <!--Section TopNav-->
-  <!--Margin for each side-->
-<style>
-
-body {
-  margin: 100;
-  font-family: Arial, Helvetica, sans-serif;
- 
-}
-.topnav {
-  width: 102%;
-  overflow: hidden;
-  background-color: #333;
-}
-
-.topnav a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 15px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-.active {
-  background-color: #4CAF50;
-  color: white;
-}
-.topnav .icon {
-  display: none;
-}
-
-@media screen and (max-width: 600px) {
-  .topnav a:not(:first-child) {display: none;}
-  .topnav a.icon {
-    float: right;
-    display: block;
-  }
-}
-@media screen and (max-width: 600px) {
-  .topnav.responsive {position: relative;}
-  .topnav.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .topnav.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-}
-</style>
-</head>
-<body>
-<section id="myTopnav">
 <div class="topnav" id="myTopnav">
-  <a href="#Home" class="active">Marjory Marquez</a>
+  <a href="#home" class="active">Marjory Marquez</a>
   <a href="#Home">Home</a>
+  <a href="#about">About</a>
   <a href="#Skills">Skills</a>
   <a href="#Projects">Projects</a>
-  <a href="#About">About</a>
-  <a href="#Contact">Contact</a>
-  <a href="javascript:void(0);" style="font-size:15px;" 
-class="icon" onclick="myFunction()">&#9776;</a>
-</div>
-<div style="padding-left:16px">
-</div>
-  </section>
-  <!--Section Wide Computer Image-->
-<!-- Header -->
-  <head>
-  <style type="text/css">
-    p {
-      text-align: center;
-    }
-  </style>
-  </head>
-  <!--the image container-->
- <div class="image"> 
-  <img src="https://www.austinfraser.com/wp-content/uploads/2015/09/FSPLFPQBCZ.jpg" alt="image" width="102%" height="800"> 
- <div class="w3-display-middle w3-margin-top w3-center">  
-   
-   <h1 style="text-align:center"> <p><span>Front End Developer</p></span> <span class="w3-hide-small w3-text-light-grey"></span>                                                                                                                                                                                       <p><span>Portfolio</p></h1>
-  </div>
-  </div>
-</header>                                                                                                                               
-  <!--End Section Wide PC Image--> 
-                                                                                                                                                   
-  <!--Section Skills 1 -->                                                                                                                                      
-  <!--HTML5 -->
- <!--Responsive side by side images-->
-  <head>
-  <style>
-    h2 {
-    font-size: 35px;
-    font-family: sans-serif;
-    color: Black;
-  }
-  </style>
-    <section id= "Skills">
+  <a href="#contact">Contact</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+</div> 
+
+<section id="home" data-type="background" data-speed="10" class="pages">     
+         <article>Front End Developer <br>Portfolio</article>
+    </section>   
+     
+<section id="about" data-type="background" data-speed="10" class="pages">
+    <article><h2>About</h2>
+<br>
+    <br>I am an IT Consultant and Front End Developer from Clarksburg, MD. I enjoy implementing business strategies, management and IT security to small businesses and end users. As well, skills in computer management,
+network security and administration, including Front End Development, and programming. If you are a business seeking a web presence, or an employer looking to hire me, you can get in touch with me here. <br>
+  <br>
+Thank you for your time and consideration.<br>
+  <br>
+  <b>Marjory Marquez</b>
+ </article>
+</section>
+<!--Section Skills-->
+<section id= "Skills">
  <div class="container">
-  <div class="w3-container w3-padding-32" id="skills"> <h2>Skills </h2>
-    </head>
-     <br>
-   </section>
+  <h2>Skills</h2>
+<br>
  <!--Images hover-shadow-->
       <div class="container"> 
     <img src="https://s31.postimg.org/3riee15tz/HTML5_Logo_128.png"  style="width:14%" alt="html5"  class="hover-shadow">
     <img src="https://s31.postimg.org/58k58amif/CSS3_icon.png" style="width:15%" alt="css3" class="hover-shadow">
     <img src="https://s31.postimg.org/w4dw4qrmv/Javascript_logo.png"  style="width:14%" alt="JavaScript"   class="hover-shadow">
-    <img src="https://s31.postimg.org/8eogfuix3/bootstrap1.jpg" style="width:14%" alt="bootstrap"  class="hover-shadow">
+    <img src='https://s31.postimg.cc/8r2nz3kp7/bootstrap.png' style="width:14%" alt="bootstrap"  class="hover-shadow">
     <img src="https://s31.postimg.org/cnt6i2jmf/C_logo.png" style="width:14%" alt="C++"  class="hover-shadow">
-    <img src="https://s31.postimg.org/r6gm1pjev/saas-app-icon.png" style="width:14%" alt="saas" class="hover-shadow">
+    <img src='https://s31.postimg.cc/6miaxvdvv/icon_sass.png'  style="width:14%" alt="sass" class="hover-shadow">
         <br>
         </br>
-    <img src="https://s31.postimg.org/9dj3u5yxz/th_002.jpg" style="width:14%" alt="wordpress"  class="hover-shadow">
+    <img src='https://s31.postimg.cc/gl39k0uxn/wordpress_logo.png' style="width:14%" alt="wordpress"  class="hover-shadow">
     <img src="https://s31.postimg.org/qrsb5rbd3/github-1024-black.png" style="width:14%" alt="github" class="hover-shadow"> 
     <img src="https://s31.postimg.org/ags793bmf/My_SQL.png" style="width:14%" alt="MySQL"  class="hover-shadow">
   <img src="https://s31.postimg.org/xt7v8vqjr/php-512_icon.png" style="width:14%" alt="PHP" class="hover-shadow">
@@ -170,14 +93,7 @@ class="icon" onclick="myFunction()">&#9776;</a>
 </div>
                                                                                                                                                                                             
 <!--End Section Skills 1-->
-
-<!--Section Projects -->
-<section>
-  </div>
-  </div>
-<br>
-  </br>
-
+</section>
 <!-- Project Section -->
 <!--To style headers -->
 <head>
@@ -190,9 +106,8 @@ class="icon" onclick="myFunction()">&#9776;</a>
   </style>
   <section id= "Projects">
  <div class="container">
-    <h2 class="w3-border-bottom w3-border-light-grey w3-padding-16">Projects</h2>
-<br>
-
+    <h2>Projects</h2>
+   <br>
     <!--For size of img projects section -section div.gallery.img-->
  <style>
 div.gallery {
@@ -222,85 +137,70 @@ div.desc {
 <div class="gallery">
   <a href="https://marjory00.github.io/FCC-Tribute" target='_blank'><img src='https://s31.postimg.cc/s72nq0rvv/Screenshot-2018-4-15_Tribute.jpg' border='0' alt='Screenshot-2018-4-15_Tribute'/></a>
   </a>
-  <div class="desc"><b>Tribute Project  </b></div>
+  <div class="desc"><b><h4>Project </h4></b></div>
 </div>
 
 <div class="gallery">
   <a href='https://postimg.cc/image/eq13tn53r/' target='_blank'><img src='https://s31.postimg.cc/n8ajxzbmj/Coming_Soon_Project.jpg' border='0' alt='Coming'/></a>
   </a>
-  <div class="desc"><b>Project  </b></div>
+    <div class="desc"><b><h4>Project  </h4></b></div>
 </div>
 
 <div class="gallery">
   <a href='https://postimg.cc/image/eq13tn53r/' target='_blank'><img src='https://s31.postimg.cc/n8ajxzbmj/Coming_Soon_Project.jpg' border='0' alt='Coming'/></a>
   </a>
-  <div class="desc"><b>Project  </b></div>
+  <div class="desc"><b><h4>Project  </h4></b></div>
 </div>
 
 <div class="gallery">
   <a href='https://postimg.cc/image/eq13tn53r/' target='_blank'><img src='https://s31.postimg.cc/n8ajxzbmj/Coming_Soon_Project.jpg' border='0' alt='Coming'/></a>
   </a>
-  <div class="desc"><b>Project 
- </b></div>
+  <div class="desc"><b><h4>Project 
+    </h4></b></div>
 </div>
-<br>
 </body>
   </html>
   </div>
+</div>
   </section>
-  <section id= "About">
-    <div class="container">
- <h2 class="w3-border-bottom w3-border-light-grey w3-padding-16">About</h2>
-    </div>
-    </div>
-<div class="container">
-<h4 style="background-color:rgb(242, 242, 242);">I am an IT Consultant and Front End Developer from Clarksburg, MD. I enjoy implementing business strategies, management and IT security to small businesses and end users. As well, skills in computer management,
-network security and administration, including Front End Development, and programming. If you are a business seeking a web presence, or an employer looking to hire me, you can get in touch with me here. <br>
-  <br>
-Thank you for your time and consideration.<br>
-  <br>
-  <b>Marjory Marquez</b>
-  <br>
-  </h4>
-    </br>
-</section>
+ <!--End Section Project -->
 
 <!--Contact Form-->
-<section id= "Contact">
-  <div class="container">
-  <form action="action_page.php">
-    <h2> Contact</h2>
+<section id= "contact">
+ <div class="container">
+      <h2 class="page-title">Contact</h2>
+      <div class="social-media">
+        <a class="media-link text-center" href=https://www.linkedin.com/in/marjory-marquez-943a8999/ role="button" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i> LinkedIn</a>
+<a class="media-link text-center" href="https://marjory00.github.io/" role="button" target="_blank"><i class="fa fa-github fa-fw"></i> Website</a>
+        <a class="media-link text-center" href="https://github.com/Marjory00role="button" target="_blank"><i class="fa fa-codepen fa-fw"></i> GitHub</a>
+<a class="media-link text-center" href="https://codepen.io/Marjory00/#” role="button" target="_blank"><i class="fa fa-codepen fa-fw"></i> CodePen</a>
+      </div>
+    </div>
+    </div>
 
-    <label for="fname">First Name</label>
-    <input type="text" id="fname" name="firstname" placeholder="Your name..">
-
-    <label for="lname">Last Name</label>
-    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-<label for="Address">Address</label>
-    <textarea id="Address" input type="text" id="Address" name="Address" placeholder="Please provide address.." style="height:90px"></textarea>
-    <label for="Telephone">Telephone</label>
-    <input type="text" id="Telephone" name="Your telephone number" placeholder="Your telephone number..">
-    <label for="country">Country</label>
-    <select id="country" name="country">
-      <option value="usa">USA</option>
-      <option value="canada">Canada</option>
-     <option value="australia">Australia</option>
-    </select>
-    
-    <label for="subject">Subject</label>
-    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-
-    <input type="submit" value="Submit">
-
-  </form>
-</div> 
+      <!--End Contact Form-->
+      <br>
+      <br>
+      </br>
+   <br>
+</div>
   </div>
-  </style>
-</section>
-
- 
-  <!--End Section Project -->
+<footer>
+  <div section id="footer">
+<script src="js/scripts.js"></script>
+   <br><br><footer><h5>Marjory Marquez<a href="MAILTO:samaterra@hotmail.com"> <br>samaterra@hotmail.com</a><br />
+A web design by Marjory Marquez <br />
+last revised April 21, 2018<br />
+    &copy;Copyright Marjory Marquez 2018 All Rights Reserved </h5><br /></div>
+</footer>
 </body>
+
+  </section>
+ 
+ <!--End Footer Section-->
+
+</body>
+
 </html>
   
   
